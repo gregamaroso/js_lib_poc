@@ -14,3 +14,9 @@
   padding: 20px;
   border: 1px solid #ccc;
 }
+
+/* JQuery only */
+
+.j-add-to-bag button {
+  background-color: #D8EDAF;
+}

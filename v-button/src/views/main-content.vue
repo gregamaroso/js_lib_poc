@@ -28,7 +28,7 @@ export default {
 
 <style scoped>
 .v-add-to-bag button {
-  padding: 4px 8px;
+  background-color: #EDBAAF;
 }
 </style>
 

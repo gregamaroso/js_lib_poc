@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Button = styled.button`
-  padding: 4px 8px;
+  background-color: #B7AFED;
 `;
 
 class App extends Component {
