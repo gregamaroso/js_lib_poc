@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+
+const Button = styled.button`
+  padding: 4px 8px;
+`;
 
 class App extends Component {
+  addToBag = (ele) => {
+    const sku = ele.getAttribute('data-sku');
+    const qty = ele.getAttribute('data-qty');
+    console.log('react', sku, qty);
+  };
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Button
+        data-sku="sku111"
+        data-qty="1"
+        onClick={(e) => { this.addToBag(e.target) }}>
+          Learn React
+      </Button>
     );
   }
 }
