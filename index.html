@@ -3,20 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <title>Demo</title>
+
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-<
-/head>
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+
+<style media="all">
+@import url("app.css");
+</style>
+</head>
 <body>
-<div id="mainContent">
-  {{ message }}
+
+<div class="buttons">
+  <div class="buttons__button">
+    <div id="vue-button">
+      <main-content></main-content>
+    </div>
+  </div>
+
+  <div class="buttons__button">
+    <div class="r-add-to-bag">blah</div>
+  </div>
+
+  <div class="buttons__button">
+    <div class="j-add-to-bag">
+      <button
+        class="product__add-to-bag"
+        data-sku="sku111"
+        data-qty="1">Add To Cart</button>
+    </div>
+  </div>
 </div>
+
+<hr />
+<h3>Comparing</h3>
+<ul>
+    <li>https://medium.com/javascript-in-plain-english/i-created-the-exact-same-app-in-react-and-vue-here-are-the-differences-e9a1ae8077fd</li>
+</ul>
+
+<h3>Pubsub</h3>
+<ul>
+   <li>https://davidwalsh.name/pubsub-javascript (global)</li>
+   <li>https://alligator.io/vuejs/global-event-bus/ (vue)</li>
+</ul>
+
+<script src="./build/vue/app.min.js"></script>
+<script src="./build/jquery/app.js"></script>
 </body>
-<script type="text/javascript">
-var comp = new Vue({
-  el: '#mainContent',
-  data: {
-    message: 'Hello Vue!'
-  },
-});
-</script>
 </html>

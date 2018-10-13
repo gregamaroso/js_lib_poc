@@ -1,0 +1,16 @@
+.product__add-to-bag {
+  padding: 4px 8px;
+}
+
+.buttons {
+  max-width: 800px;
+  margin: 40px auto;
+  display: flex;
+}
+
+.buttons__button {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+}

@@ -1,10 +1,11 @@
 <template>
 <div class="v-add-to-bag">
   <button
+    class="product__add-to-bag"
     :data-sku="sku"
     :data-qty="qty"
     v-if="displayable"
-    v-on:click="addToBag">{{ label }}</button>
+    @click="addToBag">{{ label }}</button>
 </div>
 </template>
 
@@ -19,7 +20,7 @@ export default {
   }),
   methods: {
     addToBag: function(event) {
-      console.log(this.qty, this.sku)
+      console.log('Vue', this.sku, this.qty)
     }
   }
 }

@@ -3,4 +3,4 @@ import MainContent from './views/main-content';
 
 let MainComponent = Vue.extend(MainContent);
 
-new MainComponent().$mount("#mainContent");
+new MainComponent().$mount("#vue-button");
